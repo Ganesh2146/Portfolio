@@ -1,0 +1,24 @@
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Documents
+*.docx
+*.doc
+
+# PDFs (optional - uncomment if you don't want resume in repo)
+# *.pdf
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
