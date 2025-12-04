@@ -378,8 +378,7 @@ body {
 .profile-img {
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%),
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle cx="100" cy="80" r="40" fill="%23fff"/><path d="M100 130 Q60 160 50 200 L150 200 Q140 160 100 130" fill="%23fff"/></svg>');
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     background-size: cover;
     background-position: center;
     border-radius: 15px;
@@ -491,11 +490,13 @@ section {
     width: 100%;
     height: 500px;
     background: var(--gradient-3);
-    border-radius: 20px;
+    border-radius: 50%;
     position: relative;
     overflow: hidden;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s;
+    background-size: cover;
+    background-position: center;
 }
 
 .image-frame:hover {
@@ -503,16 +504,7 @@ section {
 }
 
 .frame-decoration {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: 80%;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle cx="100" cy="100" r="80" fill="%23fff" opacity="0.3"/></svg>');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    display: none;
 }
 
 .about-text h3 {
